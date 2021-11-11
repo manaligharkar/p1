@@ -14,10 +14,10 @@ pipeline {
                           steps {
                 echo 'Hello, '
 
-                sh '''#!/bin/bash
+                sh '''
 
                     echo "Hello from bash"
-                    echo "Who I'm $SHELL"
+                    echo "Who I'm "
                 '''
             }
                 }

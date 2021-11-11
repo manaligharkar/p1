@@ -12,8 +12,14 @@ pipeline {
                 }
                 stage('show build number') {
                           steps {
-                              echo "$BUILD_NUMBER"
-                          }
+                echo 'Hello, '
+
+                sh '''#!/bin/bash
+
+                    echo "Hello from bash"
+                    echo "Who I'm $SHELL"
+                '''
+            }
                 }
             }
         }

@@ -1,12 +1,19 @@
 pipeline {
-    agent {
-        docker { image 'node:16.13.1-alpine' }
-    }
-    stages {
-        stage('Test') {
-            steps {
-                sh 'node --version'
+  agent any 
+    stages{
+        stage("sonarqube static code check"){
+            agent{
+                docker{
+                    image 'openjdk:11'
+                    
+                }
             }
+
+            steps{
+                echo 'Hello This'
+                }
+            
+
         }
     }
 }

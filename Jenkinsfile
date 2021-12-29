@@ -11,6 +11,7 @@ pipeline {
 
             steps{
                 echo 'Hello This'
+                sh 'echo post action > ee.txt'
                 }
             
 

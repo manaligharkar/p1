@@ -1,12 +1,29 @@
 pipeline {
-    agent {
-        docker { image 'node:16.13.1-alpine' }
-    }
+    agent any
+    tools { 
+        maven 'M3'
+        }
     stages {
-        stage('Test') {
+        stage ('checkout') {
             steps {
-                sh 'node --version'
+                git branch: 'main', url: 'https://github.com/manaligharkar/SpringPetClinic.git'
+               
             }
         }
+   
+        stage ('display') {
+            steps {
+                sh 'echo get job soon'
+            }
+        }
+            
+       
+    }
+    post{
+        always{
+        sh 'echo post action > ee.txt'
+            archiveArtifacts artifacts: '*.txt', fingerprint: true
+
+    }
     }
 }

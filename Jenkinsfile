@@ -4,13 +4,7 @@ pipeline {
         maven 'M3'
         }
     stages {
-        stage ('checkout') {
-            steps {
-                git branch: 'main', url: 'https://github.com/manaligharkar/SpringPetClinic.git'
-               
-            }
-        }
-   
+
         stage ('display') {
             steps {
                 sh 'echo get job soon'

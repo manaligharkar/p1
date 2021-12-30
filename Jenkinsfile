@@ -11,7 +11,7 @@ pipeline {
           
             steps {
                 git branch: 'main', url: 'https://github.com/manaligharkar/SpringPetClinic.git'
-               
+            }
     
 
             steps{

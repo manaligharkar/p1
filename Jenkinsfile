@@ -9,12 +9,9 @@ pipeline {
                 }
             }
           
-            steps {
-                git branch: 'main', url: 'https://github.com/manaligharkar/SpringPetClinic.git'
-            }
-    
 
             steps{
+                git branch: 'main', url: 'https://github.com/manaligharkar/SpringPetClinic.git'
                 echo 'Hello This'
                 sh 'echo post action > ee.txt'
                 }

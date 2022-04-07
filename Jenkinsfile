@@ -17,7 +17,7 @@ pipeline {
                 sh '''
 
                     echo "Hello from bash"
-                    echo "Who I'm "
+                    echo "I am Manali "
                 '''
             }
                 }

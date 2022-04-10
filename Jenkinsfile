@@ -9,6 +9,7 @@ pipeline {
                           steps {
                               echo "$GIT_BRANCH"
                               echo "Git Coomit Id : $GIT_COMMIT "
+                              echo "Manali-url: $GIT_URL "
                           }
                 }
                 stage('show build number') {

@@ -8,6 +8,7 @@ pipeline {
                 stage('show git branch') {
                           steps {
                               echo "$GIT_BRANCH"
+                              echo "Git Coomit Id : $GIT_COMMIT "
                           }
                 }
                 stage('show build number') {

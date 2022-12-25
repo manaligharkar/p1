@@ -14,7 +14,7 @@ pipeline {
                 }
                 stage('show build number') {
                           steps {
-                echo 'Hello, '
+                echo 'Hello hi, '
 
                 sh '''
 
